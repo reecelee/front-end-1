@@ -1,13 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from './Components/button';
-
-function App() {
+export default function Board() {
   return (
-    <div>
-      <Button/>
-    </div>
-  );
+    <>
+    <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      <div className="board-row">
+        <Square />
+        <Square />
+        <Square />
+      </div>
+    </>
+  )
 }
 
-export default App;
+function Square({value}) {
+  return <button className="square">value</button>;
+}
