@@ -9,7 +9,7 @@ function App() {
   return (
 
     <>
-    <CurrentDate></CurrentDate>
+    <CurrentDate className="title"></CurrentDate>
     <ul className="list-group">
       <a className="list-group-item">
         <div>
