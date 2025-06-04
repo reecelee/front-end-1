@@ -2,6 +2,7 @@ import { use, useState } from 'react'
 import './App.css'
 import './CurrentDate'
 import CurrentDate from './CurrentDate'
+import ListItem from './ListItem'
 
 function App() {
   
@@ -9,7 +10,8 @@ function App() {
   return (
 
     <>
-    <CurrentDate className="title"></CurrentDate>
+    <CurrentDate></CurrentDate>
+    <ListItem score="Houston Astros(W) vs. Pittsburg Pirates(L) 3-0}" description="The Houston Astros blanked the Pittsburg Pirates on their way to winning 3-0. Paul Skeenes, sophomore star, pitched 8 innings while only allowing one run. The opposing starter through 6 scoreless innings on his way to take home the win."></ListItem>
     <ul className="list-group">
       <a className="list-group-item">
         <div>
