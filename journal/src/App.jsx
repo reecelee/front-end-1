@@ -1,17 +1,31 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import './App.css'
+import Title from './Title'
 
 function App() {
 
+  const [entry, setEntry] = useState("")
+
+  function handleSubmit() {
+    return (
+      setEntry = "Entry accepted."
+    )
+  }
+
   return (
+
     <>
-      <h1>Journal</h1>
+      <Title></Title>
       <form>
         <div>
           <label htmlFor="entry">What did you do today?</label>
-          <input type="text" />
+          <textarea name="journalEntry">Enter a new entry.</textarea>
+          <button onSubmit={handleSubmit}>Submit</button>
         </div>
       </form>
+      <div className='display'>
+        <p>{entry}</p>
+      </div>
     </>
   )
 }
